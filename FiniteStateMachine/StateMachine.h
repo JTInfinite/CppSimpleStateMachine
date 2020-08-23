@@ -19,7 +19,7 @@ public:
 	void SetNewState(std::string stateName);
 
 	void Run();
-	void Stop();
+	void Stop(); // This won't work currently. Needs more
 	bool bIsRunning() { return m_bIsRunning; };
 	
 
@@ -27,7 +27,7 @@ private:
 	int m_Capacity = 0;
 	bool m_bIsRunning = false;
 	std::vector<State> m_States;
-	State* m_CurrentState;
+	State* m_CurrentState = nullptr;
 };
 
 

@@ -49,3 +49,8 @@ void StateMachine::Run()
 	m_bIsRunning = true;
 	m_CurrentState->Run();
 }
+
+void StateMachine::Stop()
+{
+	m_bIsRunning = false;
+}
